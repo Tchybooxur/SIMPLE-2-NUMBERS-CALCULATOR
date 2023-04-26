@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer's Hub Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Chibuzor's 1st Developers' Hub Task</h2>
+    <br><br>
+    <form name="myform">
+        <label><b>First Number:</b></label><br>
+        <input type="text" name="fst"><br><br>
+        <label><b>Second Number:</b></label><br>
+        <input type="text" name="snd"><br><br>
+        <input type="button" name="" value="+" onclick="add()">
+        <input type="button" name="" value="-" onclick="subtract()">
+        <input type="button" name="" value="x" onclick="multiply()">
+        <input type="button" name="" value="÷" onclick="divide()"><br><br>
+        <label><b>Result:</b></label><br>
+        <input type="text" name="result">
+    </form>
+    <script type="text/javascript">
+
+        //function that adds the 2 numbers
+        const add = () =>{
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst+snd;
+            myform.result.value=result;
+        }
+
+        //function that subtracts the 2 numbers
+        const subtract = () =>{
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst-snd;
+            myform.result.value=result;
+        }
+
+        //function that multiplies the 2 numbers
+        const multiply = () =>{
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst*snd;
+            myform.result.value=result;
+        }
+
+        //function that divides the 2 numbers
+        const divide = () =>{
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst/snd;
+            myform.result.value=result;
+        }
+    </script>
+</body>
+</html>
